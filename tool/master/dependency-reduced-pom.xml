@@ -63,6 +63,7 @@
                   <goal>xjc</goal>
                 </goals>
                 <configuration>
+                  <schemaDirectory>/home/frango/Desktop/npe/ase/ase2024/tool/master/src/main/resources/xsd</schemaDirectory>
                   <packageName>org.evosuite.xsd</packageName>
                 </configuration>
               </execution>
@@ -76,6 +77,7 @@
               </dependency>
             </dependencies>
             <configuration>
+              <schemaDirectory>/home/frango/Desktop/npe/ase/ase2024/tool/master/src/main/resources/xsd</schemaDirectory>
               <packageName>org.evosuite.xsd</packageName>
             </configuration>
           </plugin>
