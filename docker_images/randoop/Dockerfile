@@ -1,4 +1,4 @@
-FROM frango/java_base as build
+FROM artifact/java_base as build
 
 # Build Randoop
 WORKDIR /tmp

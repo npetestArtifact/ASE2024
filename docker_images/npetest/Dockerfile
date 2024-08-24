@@ -1,6 +1,6 @@
 FROM artifact/java_base as build
 
-ADD ../../tool /tmp/npetest
+ADD ./tool /tmp/npetest
 
 WORKDIR /tmp
 RUN  cd npetest && \

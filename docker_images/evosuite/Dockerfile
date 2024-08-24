@@ -1,6 +1,6 @@
 FROM artifact/java_base as build
 
-ADD ../../tool /tmp/evosuite
+ADD ./tool /tmp/evosuite
 
 WORKDIR /tmp
 RUN  cd evosuite && \
