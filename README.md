@@ -10,6 +10,8 @@ See [REQUIREMENTS.md](./REQUIREMENTS.md).
 ## Installation
 See [INSTALL.md](./INSTALL.md).
 
+If you want to perform a small experiment we provide, you can skip the installation step. 
+
 ## Benchmarks
 The directory [benchmarks](./benchmarks) contains all benchmarks.
 We conducted all experiments in docker system, and we provide the Dockerfile for each benchmark.
