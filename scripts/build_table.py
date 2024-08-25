@@ -19,8 +19,8 @@ def main():
     
     
     npetest_npe = set(df[(df['Tool'] == 'npetest') & (df['Percentage'] > 0)]['Project'])
-    evosuite_npe = set(df[(df['Name'] == 'evosuite') & (df['Percentage'] > 0)]['Project'])
-    randoop_npe = set(df[(df['Name'] == 'randoop') & (df['Percentage'] > 0)]['Project'])
+    evosuite_npe = set(df[(df['Tool'] == 'evosuite') & (df['Percentage'] > 0)]['Project'])
+    randoop_npe = set(df[(df['Tool'] == 'randoop') & (df['Percentage'] > 0)]['Project'])
     
     venn = venn3([npetest_npe, evosuite_npe, randoop_npe], ('NPETest', 'EvoSuite', 'Randoop'))
     
