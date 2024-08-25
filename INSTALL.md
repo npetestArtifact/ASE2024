@@ -8,9 +8,9 @@ You may change the settings for memories and CPU cores.
 The user name is "npetest" and the user password is set to "1234".
 You can donwload the VM image from the following link.
 
-[NPETest VM](https://doi.org/10.5281/zenodo.7578055)
+[NPETest VM](https://doi.org/10.5281/zenodo.13371823).
 
-* Loading our VM image on VirtualBox with older version ( < 7.0) may raise an error.
+* Loading our VM image on VirtualBox with older version ( < 7.0.20) may raise an error.
 
 ## Using Source Code (Using NPETest for other purposes)
 
@@ -18,7 +18,10 @@ NPETest is built on [EvoSuite](https://github.com/evosuite/evosuite).
 If you want to use NPETest solely, please follow the installation instructions of EvoSuite to install NPETest. 
 The source code for NPETest is in a [tool](./tool) directory. 
 
+
 ## Using NPETest on our experimental environment.
+
+
 
 
 
