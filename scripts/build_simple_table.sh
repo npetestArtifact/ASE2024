@@ -7,4 +7,6 @@ ${current}/scripts/check_log_file.sh ./result/evosuite/evosuite_simple ./result/
 ${current}/scripts/check_log_file.sh ./result/npetest/npetest_simple ./result/npetest_result.csv
 ${current}/scripts/check_log_file.sh ./result/randoop/randoop_simple ./result/randoop_result.csv
 
-${current}/scripts/merge_csv_files.sh ${current}/result/merge.csv
+${current}/scripts/merge_csv_files.sh ${current}/result/simple_merge.csv
+
+python3 ${current}/scripts/build_table.py ${current}/result/simple_merge.csv ${current}/result/simple_result.txt
