@@ -9,4 +9,4 @@ ${current}/scripts/check_log_file.sh ./result/randoop/randoop_result ./result/ra
 
 ${current}/scripts/merge_csv_files.sh ${current}/result/main_merge.csv
 
-python3 ${current}/scripts/build_table.py ${current}/result/main_merge.csv
+python3 ${current}/scripts/build_table.py ${current}/result/main_merge.csv ${current}/result/main_result.txt
