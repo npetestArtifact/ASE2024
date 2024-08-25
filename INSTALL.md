@@ -14,6 +14,7 @@ You can donwload the VM image from the following link.
 
 ### Using Source Code
 
+NPETest is built on [EvoSuite](https://github.com/evosuite/evosuite).
 To run experiments in a dockerized environment, build a docker image via the following command.
 ```
 docker build -t smartfix --build-arg CORE=40 .
