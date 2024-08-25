@@ -24,6 +24,6 @@ python3 ./build_docker_parallel.py -j 2
 
 # RUNNING EXPERIMENTS
 cd ${current}/experiment/scripts
-bash -c 'yes | NULL=0.1 JOB=2 TIME_BUDGET=300 NPE_CLASS_ONLY=1 PYTHON=python3 TOOL=evosuite REPEAT=2 OUTPUT_DIR=/home/npetest/ase2024/result/evosuite/evosuite_simple ./run_experiment.sh'
-bash -c 'yes | NULL=0.1 JOB=2 TIME_BUDGET=300 NPE_CLASS_ONLY=1 PYTHON=python3 TOOL=npetest REPEAT=2 OUTPUT_DIR=/home/npetest/ase2024/result/npetest/npetest_simple ./run_experiment.sh'
-bash -c 'yes | NULL=0.1 JOB=2 TIME_BUDGET=300 NPE_CLASS_ONLY=1 PYTHON=python3 TOOL=randoop REPEAT=2 OUTPUT_DIR=/home/npetest/ase2024/result/randoop/randoop_simple ./run_experiment.sh'
+bash -c 'yes | NULL=0.1 JOB=2 TIME_BUDGET=300 NPE_CLASS_ONLY=1 PYTHON=python3 TOOL=evosuite REPEAT=5 OUTPUT_DIR=/home/npetest/ase2024/result/evosuite/evosuite_simple ./run_experiment.sh'
+bash -c 'yes | NULL=0.1 JOB=2 TIME_BUDGET=300 NPE_CLASS_ONLY=1 PYTHON=python3 TOOL=npetest REPEAT=5 OUTPUT_DIR=/home/npetest/ase2024/result/npetest/npetest_simple ./run_experiment.sh'
+bash -c 'yes | NULL=0.1 JOB=2 TIME_BUDGET=300 NPE_CLASS_ONLY=1 PYTHON=python3 TOOL=randoop REPEAT=5 OUTPUT_DIR=/home/npetest/ase2024/result/randoop/randoop_simple ./run_experiment.sh'
