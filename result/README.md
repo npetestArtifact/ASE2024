@@ -4,15 +4,24 @@ All experimental results performed by the script files will be stored in this di
 
 ## Structure
 
-'''
+```
 .
-├── benchmarks                  Some auxilary files for testing provided benchmarks
-└── symtuner                    Main source code directory
-    ├── bin.py                  CLI command entry point
-    ├── klee.py                 KLEE specific implementation of SymTuner
-    ├── logger.py               Logging module
-    ├── symbolic_executor.py    Interface for all symbolic executors (e.g., KLEE)
-    └── symtuner.py             Core algorithm of SymTuner
-
-'''
+├── ...                  Some auxilary files for testing provided benchmarks
+└── npetest                    Main source code directory
+    ├── ...                  CLI command entry point
+    └── npetest_result             Core algorithm of SymTuner
+            ├── Bears                  CLI command entry point
+                 ├── ...
+            ├── Defects4J                 KLEE specific implementation of SymTuner
+                 ├── ...
+            ├── BugSwarm               Logging module
+                 ├── ...
+            ├── Genesis    Interface for all symbolic executors (e.g., KLEE)
+                 ├── ...
+            └── NPEX             Core algorithm of SymTuner
+                 ├── ...
+                 └── ZooKeeper-ef3649f5
+                     ├── ...
+                     └── 79660...
+```
   
