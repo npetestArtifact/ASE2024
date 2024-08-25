@@ -41,8 +41,11 @@ Each executable script in `scripts` directory is dedicated to a specific step in
 You might not need to understand all of the scripts in detail. Running `run_experiment.sh` will be enough. Given a testing tool, it will generate tests, and replays them.
 Usage:
 ```
-JOB=10 \
+bash -c 'yes | \
+  JOB=10 \
   TIME_BUDGET=120 \
+  NPE_CLASS_ONLY=1 \
+  PYTHON=python3 \
   TOOL=npetest \
   REPEAT=20 \
   OUTPUT_DIR="${HOME}/ase2024/result/npetest/npetest_[NAME FOR EXPERIMENT]" \
