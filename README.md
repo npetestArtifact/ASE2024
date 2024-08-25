@@ -48,7 +48,7 @@ Once the setup instruction is successfully done(or using our VM image), you can 
 ./scripts/running_simple.sh
 ```
 
-If all processes are completely done, users can eventually see the logs below:
+If all processes are completely done, users can eventually see the testing process logs below:
 ```
 ...
 [INFO] Running EVOSUITE(NPE_CLASS)_34e5[subject=NPEX:Feign-9c5a52d6] (xx/xx-xx:xx:xx)...
@@ -60,6 +60,13 @@ If all processes are completely done, users can eventually see the logs below:
 ...
 ```
 
+When the experiments are done, please enter the following command to obtain the result table and venn-diagram of unique NPEs detected by each tool:
+```
+./scripts/build_simple_table.sh
+```
+
+
+* Note that the instructions above were performed on our VM image.
 
 
 ## Reproduction of Results in the Paper
