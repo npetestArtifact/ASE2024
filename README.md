@@ -142,7 +142,7 @@ bash -c 'yes | JOB=2 TIME_BUDGET=300 \
   PYTHON=python3 \
   TOOL=npetest \
   REPEAT=25 \
-  OUTPUT_DIR="~/ase2024/result/npetest/npetest_mine" \
+  OUTPUT_DIR="./result/npetest/npetest_mine" \
   ./run_experiment.sh
 ```
 
@@ -155,11 +155,18 @@ Once all experiments are done, you can make the "result.csv" file which represen
 
 #### Generating Table
 
-
+After generating "XX_result.csv" files for all tools (NPETest, EvoSuite, and Randoop), you need to merge the csv files into one csv file as follows:
 
 ```
-python3.8 scripts/run.py evaluate 
+./scripts/merge_csv_files.sh ./result/merged_result.csv
 ```
-This script collects all our results (i.e., patch validation results for each bug) and evaluate the results whether the validated patch is correct or not by `Workspace/data/labels`. The result table is stored at `evaluate.results`. 
+Note that all "XX_result.csv" files must be located in "result" directory.
+
+Then, you can obtain the result table with the following python code.
+```
+python3 ./scripts/build_table.py ./result/merged_result.csv ./result/final_result.txt
+```
+This script csollects all the results in the merged csv file and pretty-print the result as a table.
+
 
 
