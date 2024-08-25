@@ -1,6 +1,6 @@
 # Setup
 
-### Using VM(VirtualMachine) 
+## Using VM(VirtualMachine) 
 We provide a VM image file which contain all contents to evaluate the experiments.
 The VM image is built on [VirtualBox 7.0.20](https://www.virtualbox.org).
 This VM is set to use 16GB memories and 4 CPU cores with 1 TB disk.
@@ -12,9 +12,15 @@ You can donwload the VM image from the following link.
 
 * Loading our VM image on VirtualBox with older version ( < 7.0) may raise an error.
 
-### Using Source Code
+## Using Source Code (Using NPETest for other purposes)
 
-NPETest is built on [EvoSuite](https://github.com/evosuite/evosuite), and please follow the installation instructions of EvoSuite to install NPETest. The source code for NPETest is in a [tool](../tool) directory. 
+NPETest is built on [EvoSuite](https://github.com/evosuite/evosuite).
+If you want to use NPETest solely, please follow the installation instructions of EvoSuite to install NPETest. 
+The source code for NPETest is in a [tool](./tool) directory. 
+
+## Using NPETest on our experimental environment.
+
+
 
 To run experiments in a dockerized environment, build a docker image via the following command.
 ```
