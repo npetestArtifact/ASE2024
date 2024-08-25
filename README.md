@@ -39,3 +39,35 @@ For Randoop, we only upload the log files for each benchmark listed in tables si
 ## Source code
 We updated a directory [tool](./tool) which contains all source codes for NPETest.
 Because we built NPETest on EvoSuite, a directory [tool](./tool) contains EvoSuite with NPETest options.
+
+## Reproduction of Results in the Paper
+
+We provide a python script to reproduce the results of Table 2 in the paper.
+We expect all commands are executed on `~/Workspace` directory.
+
+### Build all benchmarks
+```
+python3.8 scripts/run.py prepare
+```
+All benchmarks should be successfully built in this procedure.
+
+### Running NPEX
+```
+python3.8 scripts/run.py run 
+```
+This procedure takes quite a long time since we have 119 benchmarks.
+
+The results of NPEX are stored as `result.json` for each bug directory (e.g., `~/Workspace/benchmarks/Ours/aries-jpa_7712046/result.json').
+This procedures contains all steps of NPEX's patch generation: 
+(1) fault-localization, (2) patch enumeration, (3) specification inference, and (4) patch validation.
+We combine all steps to single script for conveniently reproducing results. 
+For those who want to run NPEX step by step, please see INSTALL.md.
+
+### Generating Table
+```
+python3.8 scripts/run.py evaluate 
+```
+This script collects all our results (i.e., patch validation results for each bug) and evaluate the results whether the validated patch is correct or not by `Workspace/data/labels`. The result table is stored at `evaluate.results`. 
+
+
+
