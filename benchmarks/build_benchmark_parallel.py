@@ -1,6 +1,7 @@
 import argparse
 import os
 import random
+import shutil, sys
 
 from multiprocessing.pool import ThreadPool
 
@@ -39,9 +40,13 @@ if __name__ == '__main__':
     parser.add_argument('--testing-type', required=False, type=int)
 
     args = parser.parse_args()
-    benchmark_list_file = "./simple_benchmark.txt"
-    if (args.testing_type == 1):
-        benchmark_list_file = "./benchmark_list.txt"
+
+    if (args.testing_type == None or args.testing_type == 0):
+        shutil.copy("./benchmark_list_ori.txt", "./benchmark_list.txt")
+    elif (args.testing_type > 0):
+        shutil.copy("./simple_benchmark.txt", "./benchmark_list.txt")
+
+    benchmark_list_file = "./benchmark_list.txt"
 
     if (args.job_count == None):
         args.job_count = 1

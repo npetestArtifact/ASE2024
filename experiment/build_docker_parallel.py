@@ -20,7 +20,7 @@ class DockerBuilder:
         self.image_name = 'artifact/npetest_evaluation'
         self.tag_name = self.benchmark_name.lower()
         self.docker_file = os.path.join(dockers_dir, self.benchmark_group, self.benchmark_name, 'Dockerfile')
-        self.cmd = f'sudo docker build -t {self.image_name}:{self.tag_name} -f {self.docker_file} .'
+        self.cmd = f'docker build -t {self.image_name}:{self.tag_name} -f {self.docker_file} .'
 
     def __repr__(self):
         return f'{self.image_name}:{self.tag_name}'
