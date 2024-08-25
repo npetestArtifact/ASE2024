@@ -40,7 +40,7 @@ For Randoop, we only upload the log files for each benchmark listed in tables si
 ## Performing small experiments
 
 We provide an example instruction which conducts a short experiment running NPETest, EvoSuite, and Randoop on 4 benchmark programs with 5 trials during 5 minutes:
-**ACS_Commons**, **Feign-9c5a**, **Fastjson-650a**, and **Math-70**.
+**BungeeCord-1303**, **Feign-9c5a**, **Fastjson-650a**, and **Math-70**.
 Note that conducting experiments for all benchmarks (Table 3 in our paper) takes at least 675 hours (5 minutes * 108 benchmarks * 25 trials * 3 tools + additional hours for building benchmarks and tools) on a single core. 
 Once the setup instruction is successfully done(or using our VM image), you can perform the small experiments with the following command:
 
@@ -105,11 +105,17 @@ Once all raw data is placed on the appropriate directory, use the following comm
 
 Assume that the users follow the installation instructions at [INSTALL.md](./INSTALL.md).
 
-#### Build all benchmarks
+#### Running NPETest on all benchmarks
 ```
-python3.8 scripts/run.py prepare
+bash -c 'yes | JOB=<> TIME_BUDGET=120 \
+  NPE_CLASS_ONLY=1 \
+  PYTHON=python3 \
+  TOOL=npetest \
+  REPEAT=20 \
+  OUTPUT_DIR="${HOME}/ase2024/result/npetest/npetest_[NAME FOR EXPERIMENT]" \
+  ./run_experiment.sh
 ```
-All benchmarks should be successfully built in this procedure.
+
 
 #### Running NPEX
 ```
