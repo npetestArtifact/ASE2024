@@ -24,7 +24,16 @@ The source code for NPETest is in a [tool](./tool) directory.
 If you want to perform a small experiment we provide, you can skip this step.
 Otherwise, please follow the instructions below.
 
+### Build all Benchmarks
 
+Please see [README.md](./benchmarks/README.md) in "benchmarks" directory.
+
+
+#### Build all benchmarks
+```
+python3.8 scripts/run.py prepare
+```
+All benchmarks should be successfully built in this procedure.
 
 
 To run experiments in a dockerized environment, build a docker image via the following command.
