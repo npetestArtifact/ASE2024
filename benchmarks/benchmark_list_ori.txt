@@ -22,7 +22,7 @@ BugSwarm:Sonar_Java-295864289
 BugSwarm:Universal_G__Code_Sender-172454077
 #BugSwarm:Universal_G__Code_Sender-243265926
 BugSwarm:Universal_G__Code_Sender-676666184
-BugSwarm:Yamcs-186324159
+#BugSwarm:Yamcs-186324159
 BugSwarm:deadcode4j-131735009
 BugSwarm:nFlow-197273853
 Defects4J:Cli-30
@@ -107,7 +107,7 @@ NPEX:PDFBox-55586aad
 NPEX:Picocli-06283710
 NPEX:Prometheus_JVM_Client-3d9a3302
 NPEX:Qpid_Proton__j-02998b38
-NPEX:Qpid_Proton__j-0c27d5ff
+#NPEX:Qpid_Proton__j-0c27d5ff
 NPEX:RocketMQ-f5a119f1
 NPEX:ShardingSphere-82b1b9d5
 NPEX:ShardingSphere-9833fb9a
