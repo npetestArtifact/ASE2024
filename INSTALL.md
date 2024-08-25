@@ -21,6 +21,8 @@ The source code for NPETest is in a [tool](./tool) directory.
 
 ## Using NPETest on our experimental environment.
 
+If you want to perform a small experiment provided by us, you can skip this process.
+Otherwise, please follow the instructions below.
 
 
 
