@@ -35,20 +35,3 @@ Please see [README.md](./benchmarks/README.md) in "**benchmarks**" directory.
 ### Build testing docker images
 
 Please see [README.md](./experiment/README.md) in "**experiment**" directory
-
-
-#### Build all benchmarks
-```
-python3.8 scripts/run.py prepare
-```
-All benchmarks should be successfully built in this procedure.
-
-
-To run experiments in a dockerized environment, build a docker image via the following command.
-```
-docker build -t smartfix --build-arg CORE=40 .
-```
-* The above command will use 40 cores in parallel when installing Z3 SMT solver. You can replace the above argument ``40`` depending on your hardware specifications.
-* *Expected running time with 40 cores: 12 minutes*
-
-
