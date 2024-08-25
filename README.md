@@ -113,6 +113,15 @@ You can see the tables in "result" directory.
 
 ```
 cat ./result/main_result.txt
+
+NPEX:
+Tool                    evosuite  npetest  randoop
+Project
+Activiti-c45d6c3c(0)       0          24        0
+Aries_JPA-97cb979d(0)    100          80        0
+Avro-a3e05bee(0)         100         100       100
+...
+
 ```
 
 
