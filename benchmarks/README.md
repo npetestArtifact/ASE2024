@@ -11,7 +11,7 @@ We should extract them in the same directory
 tar zxvf subject_gits.tar.gz
 ```
 
-This file is mandatory to properly build docker images of **buggy** projects. 
+This file is **mandatory** to properly build docker images of **buggy** projects. 
 
 ### Generate Dockerfiles for Each Subject Program
 ```bash
