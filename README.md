@@ -40,7 +40,7 @@ For Randoop, we only upload the log files for each benchmark listed in tables si
 ## Performing small experiments
 
 We provide an example instruction which conducts a short experiment running NPETest, EvoSuite, and Randoop on 4 benchmark programs with 5 trials during 5 minutes:
-ACS_Commons, Feign-9c5a, Fastjson-650a, and Math-70.
+**ACS_Commons**, **Feign-9c5a**, **Fastjson-650a**, and **Math-70**.
 Note that conducting experiments for all benchmarks (Table 3 in our paper) takes at least 675 hours (5 minutes * 108 benchmarks * 25 trials * 3 tools + additional hours for building benchmarks and tools) on a single core. 
 Once the setup instruction is successfully done(or using our VM image), you can perform the small experiments with the following command:
 
