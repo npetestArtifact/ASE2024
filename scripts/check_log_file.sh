@@ -7,7 +7,7 @@
 rm ${2}
 current=$(pwd)
 
-echo "Benchmark, Project, Class, NPE, Execution" >> ${2}
+echo "Benchmark,Project,Class,NPE,Execution" >> ${2}
 
 cnt=0
 while read line
@@ -30,18 +30,22 @@ do
     for (( i=0; i<${classlen}; i++ )); do
         bug="${array[$i]}.java:${linearray[$i]}"
 
-	bb=$(grep -r "${bug}" "${1}"/"${parent}"/"${project}"/*/*/replay_logs/* | cut -d "/" -f5 | uniq | wc -l)
+	bb=$(grep -r "${bug}" "${1}"/"${parent}"/"${project}"/*/*/replay_logs/* | cut -d "/" -f7 | uniq | wc -l)
+
+	echo "${project}"
+	echo "$(grep -r "${bug}" "${1}"/"${parent}"/"${project}"/*/*/replay_logs/* | cut -d "/" -f7 | uniq)"
+
 	cc=$(ls "${1}"/"${parent}"/"${project}"/ | wc -l)
 
 	if [[ "$bb" != "0" ]]; then
 		cnt=$(($cnt + 1))
 	fi
 
-        result="${parent}, ${project}, ${array[$i]}, ${bb}, ${cc}"
+	result="${parent},${project}(${i}),${array[$i]},${bb},${cc}"
 
         echo ${result} >> ${2}
     done
 
 done < ${current}/benchmarks/benchmark_list.txt
 
-echo "# Unique NPE, $cnt" >> ${2}
+echo "# Unique NPE,$cnt" >> ${2}

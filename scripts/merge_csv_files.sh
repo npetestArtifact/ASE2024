@@ -12,7 +12,7 @@ rm ${1}
 
 files=$(ls ${current}/result/*.csv)
 
-echo "Tool, Benchmark, Project, Class, NPE, Execution" >> ${1} 
+echo "Tool,Benchmark,Project,Class,NPE,Execution" >> ${1} 
 
 
 for file in ${files}; do
@@ -30,7 +30,7 @@ for file in ${files}; do
 			continue
 		fi
 
-		result="${tool}, ${line}"
+		result="${tool},${line}"
 
 		echo ${result} >> ${1}
 

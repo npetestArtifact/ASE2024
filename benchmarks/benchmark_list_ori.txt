@@ -22,7 +22,6 @@ BugSwarm:Sonar_Java-295864289
 BugSwarm:Universal_G__Code_Sender-172454077
 #BugSwarm:Universal_G__Code_Sender-243265926
 BugSwarm:Universal_G__Code_Sender-676666184
-#BugSwarm:Yamcs-186324159
 BugSwarm:deadcode4j-131735009
 BugSwarm:nFlow-197273853
 Defects4J:Cli-30
