@@ -34,9 +34,10 @@ This file is **mandatory** to properly build docker images of **buggy** projects
 The benchmarks for which experiment will be run are listed in `./benchmark_list.txt`. 
 
 ```bash
-python3 build_benchmark_parallel.py -j <thread_count> --testing-type 1
+python3 build_benchmark_parallel.py -j <thread_count> --testing-type 0
 ```
-"--testing-type 1" will build all benchmarks while "--testing-type 0" will build only 4 benchmark programs for the small experiment.
+"--testing-type 0" will build all benchmarks while "--testing-type 1" will build only 4 benchmark programs for the small experiment.
+*  **BungeeCord-1303**, **Feign-9c5a**, **Fastjson-650a**, and **Math-70**.
 
 Now all programs are built as below.
 ```bash
