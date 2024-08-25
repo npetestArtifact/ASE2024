@@ -22,11 +22,19 @@ The source code for NPETest is in a [tool](./tool) directory.
 ## Using NPETest on our experimental environment.
 
 If you want to perform a small experiment we provide, you can skip this step.
-Otherwise, please follow the instructions below.
+Otherwise, please follow the instructions below step by step.
+
+### Build tools
+
+Please see [README.md](./tools_docker/README.md) in "**tools_docker**" directory.
 
 ### Build all Benchmarks
 
-Please see [README.md](./benchmarks/README.md) in "benchmarks" directory.
+Please see [README.md](./benchmarks/README.md) in "**benchmarks**" directory.
+
+### Build testing docker images
+
+Please see [README.md](./experiment/README.md) in "**experiment**" directory
 
 
 #### Build all benchmarks
