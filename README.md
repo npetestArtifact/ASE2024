@@ -66,6 +66,15 @@ When the experiments are done, please enter the following command to obtain the 
 ```
 
 
+You can see the tables in "result" directory.
+
+```
+cat ./result/simple_result.txt
+```
+
+
+
+
 * Note that the instructions above were performed on our VM image.
 
 
