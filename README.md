@@ -151,6 +151,28 @@ Once all experiments are done, you can make the "result.csv" file which represen
 ```
 ./scripts/check_log_file.sh ./result/npetest/npetest_test ./result/npetest_test_result.csv
 ```
+Note that the "csv file" must be inside "result" directory.
+
+
+#### Running other tools on all benchmarks
+You can run EvoSuite and Randoop with the same command used for NPETest as follows:
+
+```
+bash -c 'yes | JOB=2 TIME_BUDGET=300 \
+  NPE_CLASS_ONLY=1 \
+  PYTHON=python3 \
+  TOOL=evosuite \
+  REPEAT=25 \
+  OUTPUT_DIR="~/ase2024/result/evosuite/evosuite_test" \
+  ./run_experiment.sh
+```
+
+Please remind that you need to generate "result.csv" file for each tool after the experiments are done.
+Note that the "csv file" must be inside "result" directory.
+
+```
+./scripts/check_log_file.sh ./result/evosuite/evosuite_test ./result/evosuite_test_result.csv
+```
 
 
 #### Generating Table
