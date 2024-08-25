@@ -121,30 +121,42 @@ cat ./result/main_result.txt
 Assume that the users follow the installation instructions at [INSTALL.md](./INSTALL.md).
 
 #### Running NPETest on all benchmarks
+After all installation is complete, you can run NPETest on all benchmark programs by using the commands below:
+
 ```
-bash -c 'yes | JOB=<> TIME_BUDGET=120 \
+bash -c 'yes | JOB=2 TIME_BUDGET=300 \
   NPE_CLASS_ONLY=1 \
   PYTHON=python3 \
   TOOL=npetest \
-  REPEAT=20 \
-  OUTPUT_DIR="${HOME}/ase2024/result/npetest/npetest_[NAME FOR EXPERIMENT]" \
+  REPEAT=25 \
+  OUTPUT_DIR="~/ase2024/result/npetest/npetest_test" \
   ./run_experiment.sh
 ```
 
+You may change the path for <OUTPUT_DIR>, but the name of parent directory must be "npetest" and the name of the last directory also starts with "npetest_".
+For example, the command can be changed as below:
 
-#### Running NPEX
 ```
-python3.8 scripts/run.py run 
+bash -c 'yes | JOB=2 TIME_BUDGET=300 \
+  NPE_CLASS_ONLY=1 \
+  PYTHON=python3 \
+  TOOL=npetest \
+  REPEAT=25 \
+  OUTPUT_DIR="~/ase2024/result/npetest/npetest_mine" \
+  ./run_experiment.sh
 ```
-This procedure takes quite a long time since we have 119 benchmarks.
 
-The results of NPEX are stored as `result.json` for each bug directory (e.g., `~/Workspace/benchmarks/Ours/aries-jpa_7712046/result.json').
-This procedures contains all steps of NPEX's patch generation: 
-(1) fault-localization, (2) patch enumeration, (3) specification inference, and (4) patch validation.
-We combine all steps to single script for conveniently reproducing results. 
-For those who want to run NPEX step by step, please see INSTALL.md.
+Once all experiments are done, you can make the "result.csv" file which represents the number of NPEs detected by using the following command:
+
+```
+./scripts/check_log_file.sh ./result/npetest/npetest_test ./result/npetest_test_result.csv
+```
+
 
 #### Generating Table
+
+
+
 ```
 python3.8 scripts/run.py evaluate 
 ```
