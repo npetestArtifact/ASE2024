@@ -2,7 +2,14 @@
 
 All tools (NPETest, EvoSuite, and Randoop) used in the experiment will be installed in docker images. Those images built here will be used in [experiment](../experiment).
 
-## Instructions
+*[NPETest](./npetest) : contains Dockerfile to generate docker image of NPETest
+*[EvoSuite](./evosuite) : contains Dockerfile to generate docker image of EvoSuite
+*[Randoop](./randoop) : contains Dockerfile to generate docker image of Randoop
+*[testing_tools](./testing_tools) : contains Dockerfile which contains exectuable files of all tools.
+
+
+
+
 
 ### Build Docker Images
 
