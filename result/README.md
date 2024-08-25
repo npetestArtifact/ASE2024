@@ -6,22 +6,16 @@ All experimental results performed by the script files will be stored in this di
 
 ```
 .
-├── ...                  Some auxilary files for testing provided benchmarks
-└── npetest                    Main source code directory
-    ├── ...                  CLI command entry point
-    └── npetest_result             Core algorithm of SymTuner
-            ├── Bears                  CLI command entry point
+├── ...                            Directories for storing the results of each tool
+└── npetest                  
+    ├── ...                        Experiment Trials
+    └── npetest_result             Experimental results for our main results
+            ├── ...
+            └── NPEX               Experimental results on NPEX benchmarksCore algorithm of SymTuner
                  ├── ...
-            ├── Defects4J                 KLEE specific implementation of SymTuner
-                 ├── ...
-            ├── BugSwarm               Logging module
-                 ├── ...
-            ├── Genesis    Interface for all symbolic executors (e.g., KLEE)
-                 ├── ...
-            └── NPEX             Core algorithm of SymTuner
-                 ├── ...
-                 └── ZooKeeper-ef3649f5
+                 └── ZooKeeper-ef3649f5      Experimental results of ZooKeeper benchmark project
                      ├── ...
-                     └── 79660...
+                     └── 79660...            Identification number for docker container (representing one trial for experiments)
+                            
 ```
   
