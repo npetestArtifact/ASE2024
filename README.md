@@ -7,6 +7,9 @@ to support the paper "Effective Unit Test Generation for Java Null Pointer Excep
 ## Requirements
 See [REQUIREMENTS.md](./REQUIREMENTS.md).
 
+## Installation
+See [INSTALLATION.md](./INSTALLATION.md).
+
 ## Benchmarks
 The directory [benchmarks](./benchmarks) contains all benchmarks.
 We conducted all experiments in docker system, and we provide the Dockerfile for each benchmark.
