@@ -48,7 +48,8 @@ we provide a script file to reproduce the results of Table 3 in the paper with t
 
 Before running the script file, users must download the "**raw data**", [NPETest](https://drive.google.com/file/d/1oToD6Ecmq8vyDikLEQRqVIJYOkU4-tvO/view?usp=sharing), [EvoSuite](https://drive.google.com/file/d/1PKAYyxqsakE2R9706zSuv3-a0sBRzmBr/view?usp=sharing), [Randoop_npex](https://drive.google.com/file/d/1mevPl4U9vwRtl0b7bdCu6EpgaMXamx6s/view?usp=sharing), [Randoop_other](https://drive.google.com/file/d/1i7M7gS0gvp2H9z5BX1ntPx3OQf8PnFcf/view?usp=sharing), for tables mentioned above,
 and place it in result directory. 
-More specifically, users require to make 
+More specifically, please follow the commands below.
+
 ```
 mkdir npetest ./result/
 mkdir evosuite ./result/
@@ -60,6 +61,7 @@ mv evosuite_opt_result ./result/npetest/
 ...
 ```
 
+Once all raw data is placed on the appropriate directory, use the following command to get the result table.
 
 ```
 ./scripts/get_results.sh
@@ -93,6 +95,15 @@ python3.8 scripts/run.py evaluate
 This script collects all our results (i.e., patch validation results for each bug) and evaluate the results whether the validated patch is correct or not by `Workspace/data/labels`. The result table is stored at `evaluate.results`. 
 
 
+```
+...
+[INFO] Running EVOSUITE(NPE_CLASS)_34e5[subject=NPEX:Feign-9c5a52d6] (xx/xx-xx:xx:xx)...
+[INFO] Running EVOSUITE(NPE_CLASS)_241s[subject=NPEX:Feign-9c5a52d6] (xx/xx-xx:xx:xx)...
+[INFO] Running EVOSUITE(NPE_CLASS)_362a[subject=NPEX:Feign-9c5a52d6] (xx/xx-xx:xx:xx)...
+[INFO] Running EVOSUITE(NPE_CLASS)_f213[subject=NPEX:Feign-9c5a52d6] (xx/xx-xx:xx:xx)...
+[INFO] Running EVOSUITE(NPE_CLASS)_a142[subject=NPEX:Feign-9c5a52d6] (xx/xx-xx:xx:xx)...
 
+...
+```
 
 
