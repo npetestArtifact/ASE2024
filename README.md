@@ -103,6 +103,8 @@ Once all raw data is placed on the appropriate directory, use the following comm
 
 ### Generating Tables from a scratch
 
+Assume that the users follow the installation instructions at [INSTALL.md](./INSTALL.md).
+
 #### Build all benchmarks
 ```
 python3.8 scripts/run.py prepare
