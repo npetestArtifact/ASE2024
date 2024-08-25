@@ -76,7 +76,7 @@ We expect all commands are executed on `~/Workspace` directory.
 
 ### Generating Table with the existing results. 
 
-As performing all experiments in our paper takes some time (e.g., approximately 600 hours on a single core), 
+As performing all experiments in our paper takes some time (e.g., approximately 700 hours on a single core), 
 we provide a script file to reproduce the results of Table 3 in the paper with the experimental results.
 
 Before running the script file, users must download the "**raw data**", [NPETest](https://drive.google.com/file/d/1oToD6Ecmq8vyDikLEQRqVIJYOkU4-tvO/view?usp=sharing), [EvoSuite](https://drive.google.com/file/d/1PKAYyxqsakE2R9706zSuv3-a0sBRzmBr/view?usp=sharing), [Randoop_npex](https://drive.google.com/file/d/1mevPl4U9vwRtl0b7bdCu6EpgaMXamx6s/view?usp=sharing), [Randoop_other](https://drive.google.com/file/d/1i7M7gS0gvp2H9z5BX1ntPx3OQf8PnFcf/view?usp=sharing), for tables mentioned above,
@@ -97,7 +97,7 @@ mv evosuite_opt_result ./result/npetest/
 Once all raw data is placed on the appropriate directory, use the following command to get the result table.
 
 ```
-./scripts/get_results.sh
+./scripts/get_main_results.sh
 ```
 
 
