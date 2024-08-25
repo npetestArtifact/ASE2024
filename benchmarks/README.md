@@ -31,11 +31,12 @@ This file is mandatory to properly build docker images of **buggy** projects.
 ```
 
 ### Build Docker Images
-The benchmarks for which experiment will be run are listed in `../benchmark_list.txt`. For light experiment, you can append `#` for each line to remove corresponding benchmark from experimental subjects.
+The benchmarks for which experiment will be run are listed in `./benchmark_list.txt`. 
 
 ```bash
-python3 build_benchmark_parallel.py -j <thread_count> --benchmark-list ../benchmark_list.txt
+python3 build_benchmark_parallel.py -j <thread_count> --testing-type 1
 ```
+"--testing-type 1" will build all benchmarks while "--testing-type 0" will build only 4 benchmark programs for the small experiment.
 
 Now all programs are built as below.
 ```bash
