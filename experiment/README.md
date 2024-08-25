@@ -37,7 +37,7 @@ docker images --filter-reference="*/npetest_evaluation:*"
 # Experiments
 Each executable script in `scripts` directory is dedicated to a specific step in experiments, the name of which is self-explanatory.
 
-## End-to-end Script
+## End-to-end Script (Solely use tool on benchmarks)
 You might not need to understand all of the scripts in detail. Running `run_experiment.sh` will be enough. Given a testing tool, it will generate tests, and replays them.
 Usage:
 ```
