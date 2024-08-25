@@ -2,6 +2,8 @@
 This repository contains the source codes for NPETest and other resources inclulding experimental data 
 to support the paper "Effective Unit Test Generation for Java Null Pointer Exceptions".
 
+[paper](./ase2024-paper796.pdf): The accepted version 
+
 ## Benchmarks
 The directory [benchmarks](./benchmarks) contains all benchmarks.
 We conducted all experiments in docker system, and we provide the Dockerfile for each benchmark.
