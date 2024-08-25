@@ -71,7 +71,7 @@ When the experiments are done, please enter the following command to obtain the 
 
 ## Reproduction of Results in the Paper
 
-We provide a python script to reproduce the results of Table 2 in the paper.
+We provide a python script to reproduce the results of Table 3 in the paper.
 We expect all commands are executed on `~/Workspace` directory.
 
 ### Generating Table with the existing results. 
