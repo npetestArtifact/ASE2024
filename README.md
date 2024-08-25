@@ -76,7 +76,7 @@ cat ./result/simple_result.txt
 
 
 * Note that the instructions above were performed on our VM image.
-* If users want to perform a small experiment on their local machine, download [subject_gits] and follow the first instruction in [README.md](./benchmarks/README.md)
+* If users want to perform a small experiment on their local machine, download [subject_gits] and follow the first instruction in [README.md](./benchmarks/README.md). Then, follow the instruction for "**Performing small experiment**".
 
 
 ## Reproduction of Results in the Paper
