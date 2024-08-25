@@ -3,7 +3,7 @@
 SCRIPT_DIR="$(cd $(dirname $0) && pwd)"
 
 DOCKERS_DIR="${SCRIPT_DIR}/dockers"
-BENCHMARK_LIST="${SCRIPT_DIR}/.././benchmarks/benchmark_list.txt"
+BENCHMARK_LIST="${SCRIPT_DIR}/../benchmarks/benchmark_list.txt"
 
 while IFS= read -r line; do
   benchmark_group=$(echo $line | cut -d':' -f1)

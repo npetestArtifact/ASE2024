@@ -89,7 +89,7 @@ if ! $PYTHON -c 'import pandas' >/dev/null 2>&1 ; then
   exit
 fi
 
-$PYTHON generate_tests.py -j $JOB --tool $TOOL --null-probability $NULL --output-dir $OUTPUT_DIR --benchmark-list $SCRIPT_DIR/../../benchmark_list.txt --time-budget $TIME_BUDGET --repeat $REPEAT $NPE_CLASS_ONLY $CRITERION && \
+$PYTHON generate_tests.py -j $JOB --tool $TOOL --null-probability $NULL --output-dir $OUTPUT_DIR --benchmark-list $SCRIPT_DIR/../../benchmarks/benchmark_list.txt --time-budget $TIME_BUDGET --repeat $REPEAT $NPE_CLASS_ONLY $CRITERION && \
   $PYTHON compile_tests.py --result-base $OUTPUT_DIR -j $JOB && \
   $PYTHON comment_out_uncompilable_tests_multi.py --result-base $OUTPUT_DIR --jobs $JOB && \
   $PYTHON compile_tests.py --result-base $OUTPUT_DIR -j $JOB && \

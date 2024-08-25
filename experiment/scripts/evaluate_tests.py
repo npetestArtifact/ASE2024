@@ -12,7 +12,7 @@ from utils import *
 
 SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
 METADATA_DIR = os.path.join(SCRIPT_DIR, '../../benchmarks/metadata')
-BENCHMARK_LIST = os.path.join(SCRIPT_DIR, '../../benchmark_list.txt')
+BENCHMARK_LIST = os.path.join(SCRIPT_DIR, '../../benchmarks/benchmark_list.txt')
 
 
 def count_commented_tests(testsuite_java):
