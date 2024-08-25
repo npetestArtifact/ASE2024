@@ -35,11 +35,17 @@ def execute_builder(builder: DockerBuilder):
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('-j', '--job-count', required=True, type=int)
-    parser.add_argument('--benchmark-list', required=True, type=os.path.abspath)
+    parser.add_argument('-j', '--job-count', required=False, type=int)
+    parser.add_argument('--testing-type', required=False, type=int)
 
     args = parser.parse_args()
-    benchmark_list_file = args.benchmark_list
+    benchmark_list_file = "./simple_benchmark.txt"
+    if (args.testing_type == 1):
+        benchmark_list_file = "./benchmark_list.txt"
+
+    if (args.job_count == None):
+        args.job_count = 1
+
     job_count = args.job_count
 
     builders = []
