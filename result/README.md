@@ -1,6 +1,9 @@
 # Result
 This repository contains experimental results for NPETest and other tools. 
+
 All experimental results performed by the script files will be stored in this directory.
+
+The sub-directories will be automatically generated after running the scripts.
 
 ## Structure
 
