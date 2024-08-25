@@ -8,7 +8,7 @@ to support the paper "Effective Unit Test Generation for Java Null Pointer Excep
 See [REQUIREMENTS.md](./REQUIREMENTS.md).
 
 ## Installation
-See [INSTALLATION.md](./INSTALLATION.md).
+See [INSTALL.md](./INSTALL.md).
 
 ## Benchmarks
 The directory [benchmarks](./benchmarks) contains all benchmarks.
