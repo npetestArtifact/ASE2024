@@ -102,7 +102,7 @@ mkdir randoop ./result/
 
 Unzip the zip files and place the result directory in the corresponding directory.
 mv npetest_result ./result/npetest/
-mv evosuite_opt_result ./result/npetest/
+mv evosuite_opt_result ./result/evosuite/
 ...
 ```
 
