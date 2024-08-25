@@ -20,10 +20,9 @@ The experimental environment will be setup on top of prepared docker image where
 ```
 
 ## Build Docker Images
-The benchmarks for which experiment will be run are listed in `../benchmark_list.txt`. For light experiment, you can append `#` for each line to remove corresponding benchmark from experimental subjects.
 
 ```bash
-python3 build_docker_parallel.py -j <thread_count> --benchmark-list ../benchmark_list.txt
+python3 build_docker_parallel.py -j <thread_count>
 ```
 
 Now all environments are prepared as below.
