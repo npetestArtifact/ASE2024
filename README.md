@@ -100,6 +100,12 @@ Once all raw data is placed on the appropriate directory, use the following comm
 ./scripts/get_main_results.sh
 ```
 
+You can see the tables in "result" directory.
+
+```
+cat ./result/main_result.txt
+```
+
 
 ### Generating Tables from a scratch
 
