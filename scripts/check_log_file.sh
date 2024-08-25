@@ -32,8 +32,8 @@ do
 
 	bb=$(grep -r "${bug}" "${1}"/"${parent}"/"${project}"/*/*/replay_logs/* | cut -d "/" -f7 | uniq | wc -l)
 
-	echo "${project}"
-	echo "$(grep -r "${bug}" "${1}"/"${parent}"/"${project}"/*/*/replay_logs/* | cut -d "/" -f7 | uniq)"
+	# echo "${project}"
+	# echo "$(grep -r "${bug}" "${1}"/"${parent}"/"${project}"/*/*/replay_logs/* | cut -d "/" -f7 | uniq)"
 
 	cc=$(ls "${1}"/"${parent}"/"${project}"/ | wc -l)
 

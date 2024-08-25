@@ -22,6 +22,7 @@ BugSwarm:Sonar_Java-295864289
 BugSwarm:Universal_G__Code_Sender-172454077
 #BugSwarm:Universal_G__Code_Sender-243265926
 BugSwarm:Universal_G__Code_Sender-676666184
+BugSwarm:Yamcs-186324159
 BugSwarm:deadcode4j-131735009
 BugSwarm:nFlow-197273853
 Defects4J:Cli-30
@@ -93,9 +94,9 @@ NPEX:Log4j_2-5b7b75d5
 NPEX:Log4j_2-6a233016
 NPEX:Log4j_2-7441d3c3
 NPEX:Log4j_2-85661de7
-NPEX:Maven_Doxia-fbe3e7c3
-NPEX:Maven_Release-c0b2304e
-NPEX:Maven_Surefire-e9f595bb
+#NPEX:Maven_Doxia-fbe3e7c3
+#NPEX:Maven_Release-c0b2304e
+#NPEX:Maven_Surefire-e9f595bb
 NPEX:Ninja-16aa9c14
 #NPEX:Nutz-15d6b30e
 NPEX:Nutz-87a4b212
@@ -103,8 +104,8 @@ NPEX:Nutz-87a4b212
 NPEX:OpenNLP-60792b8f
 NPEX:OpenPDF-a89dfdf5
 NPEX:PDFBox-55586aad
-NPEX:Picocli-06283710
-NPEX:Prometheus_JVM_Client-3d9a3302
+#NPEX:Picocli-06283710
+#NPEX:Prometheus_JVM_Client-3d9a3302
 NPEX:Qpid_Proton__j-02998b38
 #NPEX:Qpid_Proton__j-0c27d5ff
 NPEX:RocketMQ-f5a119f1
@@ -112,6 +113,6 @@ NPEX:ShardingSphere-82b1b9d5
 NPEX:ShardingSphere-9833fb9a
 NPEX:ShardingSphere-c08f4f18
 #NPEX:Shiro-08a860f5
-NPEX:Sling_Pipes-81059025
-NPEX:Tablesaw-7337d269
+#NPEX:Sling_Pipes-81059025
+#NPEX:Tablesaw-7337d269
 NPEX:ZooKeeper-ef3649f5
